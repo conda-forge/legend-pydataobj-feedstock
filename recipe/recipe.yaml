@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: legend-pydataobj
-  version: "1.15.1"
-  python_min: "3.9"
+  version: 1.16.0
+  python_min: '3.9'
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/legend_pydataobj-${{ version }}.tar.gz
-  sha256: b209875e20f9aeb15b368c31d5919bad125526c70c20b99451a570ff6a7dc50d
+  sha256: 4da31c63ef929fed6dccc4f887e97ba13a1ff762f962ad7c6df6fd07f75c66c4
 
 build:
   number: 0
@@ -32,15 +32,13 @@ requirements:
     - h5py >=3.10
     - hdf5plugin
     - hist
-    - numba !=0.53.*,!=0.54.*
+    - numba !=0.53,!=0.54.*
     - numexpr
     - numpy >=1.21
     - pandas >=1.4.4
     - parse
     - pint >0.24
     - pint-pandas
-    - __unix
-
 tests:
   - python:
       imports:
