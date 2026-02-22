@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: legend-pydataobj
-  version: "1.17.3"
+  version: "1.17.4"
   python_min: '3.10'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/legend_pydataobj-${{ version }}.tar.gz
-  sha256: f0ed83a0eec16c7a8e6408737a07ee95e7abf5a2b4e29c484eb518f0ab06e947
+  sha256: 1770217408586f5e597b8d9800524f673305effbce89abdd3fe95cbbe261eb7b
 
 build:
   number: 0
