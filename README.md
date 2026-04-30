@@ -14,10 +14,8 @@ Development: https://github.com/legend-exp/legend-pydataobj
 Documentation: https://legend-pydataobj.readthedocs.io/
 
 This package provides a Python implementation of the LEGEND Data Objects
-(LGDO) and I/O to HDF5, including Numba-accelerated custom compression
-algorithms for particle detector signals.
-More documentation is available in the
-[LEGEND data format specification](https://legend-exp.github.io/legend-data-format-specs).
+(LGDO).  More documentation is available in the [LEGEND data format
+specification](https://legend-exp.github.io/legend-data-format-specs).
 
 Current build status
 ====================
