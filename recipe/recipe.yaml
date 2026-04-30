@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: legend-pydataobj
-  version: 2.0.0
+  version: 2.0.1
   python_min: '3.10'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/legend_pydataobj-${{ version }}.tar.gz
-  sha256: b4c1d151581e047905f93a623fb1ee94d5a30b5a17e8ce31d92072a63affc861
+  sha256: 6e7a72075f7b719af67675c80dde9e5286bf8c2719b828fdde962ef98fd13917
 
 build:
   number: 0
@@ -38,7 +38,6 @@ requirements:
     - pint >0.24
     - pint-pandas
     - pyarrow
-    - legend-lh5io
 tests:
   - python:
       imports:
@@ -51,8 +50,6 @@ tests:
         - pip
     script:
       - pip list
-      - lh5ls --help
-      - lh5concat --help
 
 about:
   license: GPL-3.0-only
@@ -60,10 +57,8 @@ about:
   summary: LEGEND Python Data Objects
   description: |
     This package provides a Python implementation of the LEGEND Data Objects
-    (LGDO) and I/O to HDF5, including Numba-accelerated custom compression
-    algorithms for particle detector signals.
-    More documentation is available in the
-    [LEGEND data format specification](https://legend-exp.github.io/legend-data-format-specs).
+    (LGDO).  More documentation is available in the [LEGEND data format
+    specification](https://legend-exp.github.io/legend-data-format-specs).
   homepage: https://github.com/legend-exp/legend-pydataobj
   repository: https://github.com/legend-exp/legend-pydataobj
   documentation: https://legend-pydataobj.readthedocs.io/
