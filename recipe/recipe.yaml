@@ -14,7 +14,7 @@ source:
   sha256: 6fc9ce7a919f65635db9edcbbae433da02e5ac7b958bacad2ca2a596046b2040
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -25,6 +25,7 @@ requirements:
     - setuptools >=77
     - setuptools-scm >=7
   run:
+    - __unix
     - python >=${{ python_min }}
     - awkward >=2
     - awkward-pandas
